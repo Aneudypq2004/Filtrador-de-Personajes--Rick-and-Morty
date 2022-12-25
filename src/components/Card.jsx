@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export default function Card({ personajes }) {
 
 
-  const { id, name, status, species, gender, image, origin } = personajes
+  const { name, status, species, gender, image, origin } = personajes
 
   const origen = origin.name
 
