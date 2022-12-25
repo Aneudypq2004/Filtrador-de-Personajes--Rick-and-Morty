@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import logo1 from '/img/female.svg'
 import logo from '/img/male.svg'
-import useFiltros from '../context/useFiltros'
-
+import useFiltros from '../hook/useFiltros'
 function Sidebar() {
 
     const { categoria, setCategoria } = useFiltros()

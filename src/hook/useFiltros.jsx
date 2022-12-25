@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import FiltrosContext from "../components/FiltrosProvider";
+import FiltrosContext from "../context/FiltrosProvider";
 
 
 

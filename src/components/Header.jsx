@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from 'axios'
 import Card from "./Card";
-import useFiltros from "../context/useFiltros";
+import useFiltros from "../hook/useFiltros";
 
 export default function Header() {
 

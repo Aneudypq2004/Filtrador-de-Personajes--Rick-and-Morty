@@ -1,10 +1,8 @@
-import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
-import axios from 'axios';
 import Card from './components/Card';
-import useFiltros from './context/useFiltros';
 import Spinner from './components/Spinner';
+import useFiltros from './hook/useFiltros';
 
 function App() {
 
