@@ -1,0 +1,25 @@
+@mixin grid($columns, $px) {
+    @media (min-width: $px) {
+        grid-template-columns: repeat($colums, 1fr);
+    }
+
+
+}
+
+@mixin telefono {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}

@@ -1,0 +1,143 @@
+@use '../base/mixins' as m;
+
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+
+
+    @include m.tablet {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @include m.desktop {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+
+.card {
+    padding: 0rem;
+    background: rgba(255, 99, 99, 0.80);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+
+    img {
+        height: 18.2rem;
+        width: 100%;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+
+
+    }
+
+    &-contenido {
+        font-size: 2rem;
+        color: white;
+        padding: 2rem;
+        position: relative;
+
+
+    }
+
+    &-categoria {
+
+        p {
+            color: black;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+
+
+        }
+
+        border-right: 3px black solid;
+        padding-right: 2rem;
+        margin-right: 2rem;
+    }
+
+    &-info {
+        padding-right: 2rem;
+
+        p {
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+
+        }
+    }
+
+    &-nombre {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+
+        .nombre {
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.personaje {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 2rem 0;
+    color: white;
+}
+
+.main {
+    text-align: center;
+
+    padding: 2rem;
+
+    margin: 0 auto;
+
+    @include m.tablet {
+        padding: 4rem;
+        padding-left: 1rem;
+
+    }
+
+    @include m.desktop {
+        padding: 8rem;
+    }
+
+
+
+}
+
+.status {
+    width: 3rem;
+    border-radius: 50%;
+    height: 3rem;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+}
+
+.green {
+    background-color: #19F515;
+}
+
+.red {
+    background-color: red;
+}
+
+.card-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

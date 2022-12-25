@@ -1,0 +1,81 @@
+@use '../base/mixins' as m;
+
+
+.sidebar {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 180px;
+    padding: 3rem;
+    text-align: center;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+
+    @include m.telefono {
+
+        display: none;
+
+    }
+
+    h3 {
+        margin-top: 2rem;
+        font-weight: bold;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        line-height: 10rem;
+        text-transform: uppercase;
+        border-bottom: 1px white solid;
+    }
+
+    .ch {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+}
+
+
+.filtro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+
+
+    &-flex {
+        display: flex;
+        gap: 2rem;
+        flex-direction: row;
+        max-width: 13.2rem;
+    }
+
+    .cuadro {
+        background-color: white;
+        min-width: 2.7rem;
+        min-height: 2.7rem;
+    }
+
+    .label {
+        font-size: 2rem;
+    }
+
+    .circulo {
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+
+        &-green {
+            background-color: #19F515;
+        }
+
+        &-red {
+            background-color: red;
+        }
+    }
+
+
+}
